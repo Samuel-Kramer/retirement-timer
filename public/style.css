@@ -1,0 +1,104 @@
+/* body {
+    background-image: url("Images/Spring/spring1.jpg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+} */
+
+html {
+    background: url("Images/Spring/spring1.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#center {
+    width: 60vw;
+    /* height: 35vh; */
+    margin: auto;
+    margin-top: 23vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+}
+
+#days-left {
+    font-size: 160px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+#message {
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+    top: -3vh;
+}
+
+.marker {
+    z-index: 2;
+    position: absolute;
+    width: 2.5vw;
+    height: 5vh;
+}
+
+
+/* Landing on scapes */
+
+
+/* Mobile */
+
+@media only screen and (max-width: 981px) and (orientation: landscape) {
+    #message {
+        top: -6vh;
+    }
+
+  .marker {
+    width: 2.5vw;
+    height: 7.5vh;
+  }
+}
+
+@media only screen and (max-width:481px) and (orientation: portrait) {
+    #center {
+        width: 80vw;
+    }
+
+  .marker {
+    width: 3.5vw;
+    height: 4vh;
+  }
+}
+
+
+#progress-bar {
+    background-color: white;
+    width: 50vw;
+    height: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bar {
+    background-image: linear-gradient(to right, red, yellow, green);
+    width: 50vw;
+    height: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+#percent-left {
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
